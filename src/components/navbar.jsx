@@ -1,128 +1,89 @@
 import { useState } from 'react'
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from '@headlessui/react'
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
+import { FaHome, FaInfo } from "react-icons/fa";
+import {MdWork} from "react-icons/md";
+import {BiSolidContact} from "react-icons/bi";
 
-export default function NavBar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+const navItems = [
+  {
+    id: 1,
+    text: "Home",
+    icon: <FaHome />,
+    link: "#"
+  },
+  {
+    id: 2,
+    text: "About",
+    icon: <FaInfo />,
+    link: "#"
+  },
+  {
+    id: 3,
+    text: "Service",
+    icon: <MdWork />,
+    link: "#"
+  },
+  {
+    id: 4,
+    text: "Contact",
+    icon: <BiSolidContact />,
+    link: "#"
+  },
+]
+export const Navbar = () => {
+  const [openNavbar, setOpenNavbar] = useState(false)
+
+  const toggleNavbar = () => {
+    setOpenNavbar(openNavbar => !openNavbar)
+  }
 
   return (
-    <header className="bg-white">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8">
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src="./logo.jpg"
-              className="h-8 w-auto"
-            />
-          </a>
-        </div>
-        <div className="flex lg:hidden">
-          <button
-            type="button"
-            onClick={() => setMobileMenuOpen(true)}
-            className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          >
-            <span className="sr-only">Open main menu</span>
-            <Bars3Icon aria-hidden="true" className="h-6 w-6" />
-          </button>
-        </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
-        <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Home
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            About
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Service
-          </a>
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Contact
-          </a>
-        </PopoverGroup>
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 bg-violet-950 rounded p-1.5 font-semibold text-white">
-            Log in 
-          </a>
-        </div>
-      </nav>
-
-      <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
-        <div className="fixed inset-0 z-10" />
-        <DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-          <div className="flex items-center justify-between">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">WanderUva</span>
-              <img
-                alt=""
-                src="./logo.jpg"
-                className="h-8 w-auto"
-              />
-            </a>
-            <button
-              type="button"
-              onClick={() => setMobileMenuOpen(false)}
-              className="-m-2.5 rounded-md p-2.5 text-gray-700"
-            >
-              <span className="sr-only">Close menu</span>
-              <XMarkIcon aria-hidden="true" className="h-6 w-6" />
-            </button>
-          </div>
-          <div className="mt-6 flow-root">
-            <div className="-my-6 divide-y divide-gray-500/10">
-              <div className="space-y-2 py-6">
-              <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  About
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Service
-                </a>
-                <a
-                  href="#"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
-                >
-                  Contact
-                </a>
-              </div>
-              <div className="py-6">
-                <a
-                  href="#"
-                  className="-mx-3 block bg-violet-950 rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white"
-                >
-                  Log in
+      <>
+        <header className="sticky top-5 m-5 -my-10 flex items-center h-20 rounded-lg z-40 backdrop-blur bg-white/30">
+          <nav className="relative mx-auto w-full px-5 flex gap-x-5 justify-between items-center max-w-7xl">
+            <div className="flex items-center min-w-max relative">
+              <a href="#">
+                <img className="h-24 w-auto" alt="Brand" src="/logo.png"/>
+              </a>
+            </div>
+            <div className={`
+                    fixed inset-x-0 lg:h-max top-0 lg:opacity-100 backdrop-blur bg-white/50 sm:backdrop-blur-none rounded-lg lg:!bg-transparent py-20 lg:py-0 px-5 sm:px-10 md:px-12 lg:px-0 lg:top-0 lg:relative lg:flex lg:justify-between lg:gap-x-8
+                    ${openNavbar ? "" : "-translate-y-10 opacity-0 invisible lg:visible lg:translate-y-0 lg:space-x-8"}
+                `}>
+              <ul className="flex flex-col lg:flex-row lg:justify-end items-center text-gray-800 font-semibold lg:w-full lg:pl-10 gap-8">
+                {
+                  navItems.map(navItem => (
+                      <li key={navItem.id}>
+                        <a href={navItem.link} className="relative py-2.5 duration-300 ease-linear">
+                            <span className="flex items-center gap-2">
+                                {navItem.icon}
+                                <span>{navItem.text}</span>
+                            </span>
+                        </a>
+                      </li>
+                  ))
+                }
+              </ul>
+              <div className="flex flex-col sm:flex-row sm:items-center justify-center gap-4 lg:min-w-max mt-10 lg:mt-0">
+                <a href="#" className="h-10 flex items-center justify-center w-full max-w-xs mx-auto rounded-md px-5 backdrop-blur bg-white/10 font-semibold">
+                  Sign Up
                 </a>
               </div>
             </div>
-          </div>
-        </DialogPanel>
-      </Dialog>
-    </header>
+            <div className="flex items-center lg:hidden">
+              <button onClick={() => { toggleNavbar() }} className="outline-none border-l pl-3 relative py-3">
+                <span className="sr-only">Toggle navbar</span>
+                <span aria-hidden="true" className={`
+                            flex h-0.5 w-6 rounded bg-gray-800 transition duration-300
+                            ${openNavbar ? "rotate-45 translate-y-[0.33rem]" : ""}
+                        `} />
+                <span aria-hidden="true" className={`
+                            flex mt-2 h-0.5 w-6 rounded bg-gray-800 transition duration-300
+                            ${openNavbar ? "-rotate-45 -translate-y-[0.33rem]" : ""}
+                        `} />
+              </button>
+            </div>
+          </nav>
+        </header>
+      </>
   )
 }
