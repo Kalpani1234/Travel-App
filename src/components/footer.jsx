@@ -148,7 +148,7 @@ const footerBlocks = [
 
 export const Footer = () => {
     return (
-        <footer className="bg-white text-gray-700">
+        <footer className="bg-slate-100 text-gray-700">
             <div className="max-w-7xl mx-auto px-5 sm:px-10 md:px-12 lg:px-5  py-20 flex flex-col lg:flex-row gap-14">
                 <div className="space-y-6 lg:w-96">
                     <a href="#">

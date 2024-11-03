@@ -14,6 +14,8 @@ export const Home = () => {
                   
                   </h1>
               </div>
+
+              
             <Footer/>
         </div>
     )

@@ -64,8 +64,8 @@ export const Navbar = () => {
                 }
               </ul>
               <div className="flex flex-col sm:flex-row sm:items-center justify-center gap-4 lg:min-w-max mt-10 lg:mt-0">
-                <a href="/sign-up" className="h-10 flex items-center justify-center w-full max-w-xs mx-auto rounded-md px-5 backdrop-blur bg-white/10 font-semibold">
-                  Sign Up
+                <a href="/signin" className="h-10 flex items-center justify-center w-full max-w-xs mx-auto rounded-md px-5 backdrop-blur bg-white/10 font-semibold">
+                  Sign In
                 </a>
               </div>
             </div>
