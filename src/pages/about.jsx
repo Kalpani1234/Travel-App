@@ -13,7 +13,7 @@ export const About = () => {
                   </h1>
               </div>
           </div>
-          <div className="container mx-auto max-w-7xl py-10 space-y-8">
+          <div className="container mx-auto max-w-7xl px-5 py-10 space-y-8">
               <div className="space-y-5">
                   <h1 className="text-3xl font-bold">Our History</h1>
                   <p className="text-lg text-justify">
