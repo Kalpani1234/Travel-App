@@ -30,27 +30,27 @@ const footerBlocks = [
         items: [
             {
                 id: 1,
-                text: "Web design",
+                text: "Adventure Tours",
                 link: "#"
             },
             {
                 id: 2,
-                text: " Consultancy ",
+                text: " Guides ",
                 link: "#"
             },
             {
                 id: 3,
-                text: "Web Development",
+                text: "Hotels",
                 link: "#"
             },
             {
                 id: 4,
-                text: "Mobile Development",
+                text: "Experiences",
                 link: "#"
             },
             {
                 id: 5,
-                text: "Mobile Development",
+                text: "Group Trips",
                 link: "#"
             },
         ]
@@ -66,7 +66,7 @@ const footerBlocks = [
             },
             {
                 id: 2,
-                text: "Career",
+                text: "Tour",
                 link: "#"
             },
             {
@@ -81,7 +81,7 @@ const footerBlocks = [
             },
             {
                 id: 5,
-                text: "Services",
+                text: "Travelling",
                 link: "#"
             },
         ]
@@ -155,7 +155,7 @@ export const Footer = () => {
                         <img className="h-24 w-auto" alt="Brand" src="/logo.png"/>
                     </a>
                     <p className="max-w-lg">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta iusto est quia a
+                    Discover the breathtaking landscapes, ancient temples, and vibrant culture of Uva Province, Sri Lanka.
                     </p>
                     <div className="flex w-full gap-5">
                         <a href="#" aria-label="social link">
