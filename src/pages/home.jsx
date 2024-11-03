@@ -8,6 +8,13 @@ export const Home = () => {
             <img className="w-full h-screen object-cover"
                  src="./img1.jpg"
                  alt=""/>
+                 <div className="absolute inset-0 flex items-center justify-center">
+                  <h1 className="text-5xl font-bold text-white">
+                  Explore Beyond the Map
+
+                  </h1>
+                  </div>
+                 
             <Footer/>
         </div>
     )
