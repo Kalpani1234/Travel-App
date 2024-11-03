@@ -17,13 +17,13 @@ export const Service = () => {
                   <div className="mx-auto max-w-7xl px-4 pt-10 sm:px-6 lg:px-8">
                       <div className="flex justify-center">
                           <p className="text-lg font-semibold text-justify mb-8">
-                              We provide all the advantages that can simplify all your financial transactions without any further requirements.
+                          We offer a range of convenient services to make your travel planning seamless and enjoyable, helping you experience the best of Uva Province.
                           </p>
                       </div>
                       <div
                           className="flex justify-center items-center gap-x-5 gap-y-8 lg:gap-y-0 flex-wrap md:flex-wrap lg:flex-nowrap lg:flex-row lg:justify-between lg:gap-x-8">
                           <div
-                              className="group relative w-full bg-gray-100 rounded-2xl p-4 transition-all duration-500 max-md:max-w-md max-md:mx-auto md:w-2/5 md:h-64 xl:p-7 xl:w-1/4 hover:bg-green-600">
+                              className="group relative w-full bg-gray-100 rounded-2xl p-4 transition-all duration-500 max-md:max-w-md max-md:mx-auto md:w-2/5 md:h-64 xl:p-7 xl:w-1/4 hover:bg-green-900">
                               <div className="bg-white rounded-full flex justify-center items-center mb-5 w-14 h-14 ">
                                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                        xmlns="http://www.w3.org/2000/svg">
@@ -33,15 +33,13 @@ export const Service = () => {
                                   </svg>
 
                               </div>
-                              <h4 className="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">Easy
-                                  Payment</h4>
+                              <h4 className="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">Travel Information</h4>
                               <p className="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 group-hover:text-white">
-                                  We Provide Various Methods For You To Carry Out All Transactions Related To Your
-                                  Finances
+                              Access up-to-date details on top destinations, travel tips, and must-see attractions in Uva Province to make your trip planning easy.
                               </p>
                           </div>
                           <div
-                              className="group relative w-full bg-gray-100 rounded-2xl p-4 transition-all duration-500 max-md:max-w-md max-md:mx-auto md:w-2/5 md:h-64 xl:p-7 xl:w-1/4 hover:bg-green-600">
+                              className="group relative w-full bg-gray-100 rounded-2xl p-4 transition-all duration-500 max-md:max-w-md max-md:mx-auto md:w-2/5 md:h-64 xl:p-7 xl:w-1/4 hover:bg-green-900">
                               <div className="bg-white rounded-full flex justify-center items-center mb-5 w-14 h-14 ">
                                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                        xmlns="http://www.w3.org/2000/svg">
@@ -52,15 +50,13 @@ export const Service = () => {
                                   </svg>
 
                               </div>
-                              <h4 className="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">Safe
-                                  Transaction</h4>
+                              <h4 className="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">Local Insights</h4>
                               <p className="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 group-hover:text-white">
-                                  We have the most up-to-date security to support the security of all our customers in
-                                  carrying out all transactions.
+                              Discover insider knowledge on the best local spots, cultural highlights, and hidden gems to experience the authentic beauty.
                               </p>
                           </div>
                           <div
-                              className="group relative w-full bg-gray-100 rounded-2xl p-4 transition-all duration-500 max-md:max-w-md max-md:mx-auto md:w-2/5 md:h-64 xl:p-7 xl:w-1/4 hover:bg-green-600">
+                              className="group relative w-full bg-gray-100 rounded-2xl p-4 transition-all duration-500 max-md:max-w-md max-md:mx-auto md:w-2/5 md:h-64 xl:p-7 xl:w-1/4 hover:bg-green-900">
                               <div className="bg-white rounded-full flex justify-center items-center mb-5 w-14 h-14 ">
                                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                        xmlns="http://www.w3.org/2000/svg">
@@ -71,14 +67,13 @@ export const Service = () => {
                                   </svg>
 
                               </div>
-                              <h4 className="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">Fast
-                                  Customer Service </h4>
+                              <h4 className="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">24/7 Support</h4>
                               <p className="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 group-hover:text-white">
-                                  Provide Customer Service For Those Of You Who Have Problems 24 Hours A Week
+                              Our team is here to answer your questions at any time, providing helpful information to ensure a smooth and enjoyable visit.
                               </p>
                           </div>
                           <div
-                              className="group relative w-full bg-gray-100 rounded-2xl p-4 transition-all duration-500 max-md:max-w-md max-md:mx-auto md:w-2/5 md:h-64 xl:p-7 xl:w-1/4 hover:bg-green-600">
+                              className="group relative w-full bg-gray-100 rounded-2xl p-4 transition-all duration-500 max-md:max-w-md max-md:mx-auto md:w-2/5 md:h-64 xl:p-7 xl:w-1/4 hover:bg-green-900">
                               <div className="bg-white rounded-full flex justify-center items-center mb-5 w-14 h-14 ">
                                   <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                        xmlns="http://www.w3.org/2000/svg">
@@ -89,11 +84,9 @@ export const Service = () => {
                                   </svg>
 
                               </div>
-                              <h4 className="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">Quick
-                                  Transaction</h4>
+                              <h4 className="text-xl font-semibold text-gray-900 mb-3 capitalize transition-all duration-500 group-hover:text-white">Personalization</h4>
                               <p className="text-sm font-normal text-gray-500 transition-all duration-500 leading-5 group-hover:text-white">
-                                  We provide faster transaction speeds than competitors, so money arrives and is
-                                  received faster.
+                              Find tailored suggestions based on your interests, from scenic hikes to historic sites, helping you make the most of your journey.
                               </p>
                           </div>
                       </div>
