@@ -8,25 +8,25 @@ const navItems = [
     id: 1,
     text: "Home",
     icon: <FaHome />,
-    link: "#"
+    link: "/"
   },
   {
     id: 2,
     text: "About",
     icon: <FaInfo />,
-    link: "#"
+    link: "/about"
   },
   {
     id: 3,
     text: "Service",
     icon: <MdWork />,
-    link: "#"
+    link: "/service"
   },
   {
     id: 4,
     text: "Contact",
     icon: <BiSolidContact />,
-    link: "#"
+    link: "/contact"
   },
 ]
 export const Navbar = () => {
@@ -41,7 +41,7 @@ export const Navbar = () => {
         <header className="sticky top-5 m-5 -my-10 flex items-center h-20 rounded-lg z-40 backdrop-blur bg-white/30">
           <nav className="relative mx-auto w-full px-5 flex gap-x-5 justify-between items-center max-w-7xl">
             <div className="flex items-center min-w-max relative">
-              <a href="#">
+              <a href="/">
                 <img className="h-24 w-auto" alt="Brand" src="/logo.png"/>
               </a>
             </div>
@@ -64,7 +64,7 @@ export const Navbar = () => {
                 }
               </ul>
               <div className="flex flex-col sm:flex-row sm:items-center justify-center gap-4 lg:min-w-max mt-10 lg:mt-0">
-                <a href="#" className="h-10 flex items-center justify-center w-full max-w-xs mx-auto rounded-md px-5 backdrop-blur bg-white/10 font-semibold">
+                <a href="/sign-up" className="h-10 flex items-center justify-center w-full max-w-xs mx-auto rounded-md px-5 backdrop-blur bg-white/10 font-semibold">
                   Sign Up
                 </a>
               </div>
